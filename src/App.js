@@ -10,7 +10,6 @@ function App() {
   const [forecast, setForecast] = useState(null);
 
   const handleSearchChange = (searchData) => {
-    console.log("searchData", searchData);
     const [lat, lon] = searchData.value.split(" ");
 
     const CurrentWeatherFetch = fetch(
@@ -30,9 +29,6 @@ function App() {
       })
       .catch((error) => console.log(error));
   };
-
-  console.log(currentWeather);
-  console.log(forecast);
 
   return (
     <div className="container">
