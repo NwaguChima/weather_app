@@ -52,30 +52,28 @@ const Forecast = ({ data }) => {
             <AccordionItemPanel>
               <div className="daily-details-grid">
                 <div className="daily-details-grid-item">
-                  <label className="description">Pressue</label>
-                  <label className="value">{item.main.pressure} hPa</label>
+                  <label>Pressue</label>
+                  <label>{item.main.pressure} hPa</label>
                 </div>
                 <div className="daily-details-grid-item">
-                  <label className="description">Humidity</label>
-                  <label className="value">{item.main.humidity}%</label>
+                  <label>Humidity</label>
+                  <label>{item.main.humidity}%</label>
                 </div>
                 <div className="daily-details-grid-item">
-                  <label className="description">Clouds</label>
-                  <label className="value">{item.clouds.all}%</label>
+                  <label>Clouds</label>
+                  <label>{item.clouds.all}%</label>
                 </div>
                 <div className="daily-details-grid-item">
-                  <label className="description">Wind Speed</label>
-                  <label className="value">{item.wind.speed} m/s</label>
+                  <label>Wind Speed</label>
+                  <label>{item.wind.speed} m/s</label>
                 </div>
                 <div className="daily-details-grid-item">
-                  <label className="description">Sea level</label>
-                  <label className="value">{item.main.sea_level}m</label>
+                  <label>Sea level</label>
+                  <label>{item.main.sea_level}m</label>
                 </div>
                 <div className="daily-details-grid-item">
-                  <label className="description">Feels like</label>
-                  <label className="value">
-                    {Math.round(item.main.feels_like)}ºC
-                  </label>
+                  <label>Feels like</label>
+                  <label>{Math.round(item.main.feels_like)}ºC</label>
                 </div>
               </div>
             </AccordionItemPanel>
