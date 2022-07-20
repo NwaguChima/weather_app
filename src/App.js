@@ -9,6 +9,7 @@ function App() {
   const [forecast, setForecast] = useState(null);
 
   const handleSearchChange = (searchData) => {
+    console.log("searchData", searchData);
     const [lat, lon] = searchData.value.split(" ");
 
     const CurrentWeatherFetch = fetch(
@@ -35,7 +36,7 @@ function App() {
   return (
     <div className="container">
       <Search onSearchChange={handleSearchChange} />
-      <CurrentWeather />
+      {currentWeather && <CurrentWeather data={currentWeather} />}
     </div>
   );
 }
